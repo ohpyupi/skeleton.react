@@ -6,12 +6,12 @@ app // a react.js application directory.
 ├── app.module.js // a main entry module file.
 ├── app.config.js // a main configuration file.
 ├── /containers
-│		├── index.js // a registry file to register all contaniers.
-│		└── /sample // a sample container
-│				└── index.js // a file where a container component class is defined.
+│   ├── index.js // a registry file to register all contaniers.
+│   └── /sample // a sample container
+│	└── index.js // a file where a container component class is defined.
 └── /components
-		└── /sample // a sample component
-				└── index.js // a file where a component class is defined.
+    └── /sample // a sample component
+        └── index.js // a file where a component class is defined.
 ```
 
 ## Commands
