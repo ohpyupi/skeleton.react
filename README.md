@@ -18,9 +18,9 @@ app // a react.js application directory.
 For develolopment purpose, a minimal express development server comes with the project. Below are the possible npm commands that a user can execute.
 ```
 # npm install // Install all related javascript packages (Ex. react.js, express, webpack, etc)
-# npm start // Run an express server calling server.js in the project.
-# npm run build // Run webpack to complie bundle file out of app/app.module.js
-# npm run watch // Run webpack in watch mode to keep updating the changes to angular.js app.
-# npm run nodemon // Run nodemon to keep updating the changes to express.js development server.
-# npm run dev // Run "npm run watch" and "npm run nodemon" concurrently.
+# npm start // Run a server - to be used in production.
+# npm run build // Produce production-ready(minified) assets.
+# npm run watch // Continuouly produce assets for development purpose whenever changes made.
+# npm run nodemon // Run a development server for the project.
+# npm run dev // Run both "npm run watch" and "npm run nodemon" together.
 ```
