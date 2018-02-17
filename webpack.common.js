@@ -15,7 +15,7 @@ module.exports = {
 		tls: 'empty',
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js$/,
 				exclude: /(node_modules|bower_components)/,
@@ -26,19 +26,30 @@ module.exports = {
 			},
 			{
 				test: /\.html$/,
-				loader: 'html-loader',
+				use: [
+					'html-loader',
+				],
 			},
 			{
 				test: /\.css$/,
-				loader: 'style-loader!css-loader',
+				use: [
+					'style-loader',
+					'css-loader'
+				],
 			},
 			{
-				test: /\.scss$/,
-				loader: 'style-loader!css-loader!sass-loader',
+				test: /\.(sass|scss)$/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				],
 			},
 			{
 				test: /\.(eot|svg|gif|png|jpg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
-				loader: 'url-loader'
+				use: [
+					'url-loader'
+				],
 			},
 		],
 	},

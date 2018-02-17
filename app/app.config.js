@@ -1,21 +1,19 @@
 import {UIRouterReact, servicesPlugin, pushStateLocationPlugin} from '@uirouter/react';
 
-//import Sample from './containers/sample';
+import Home from './containers/home';
 
 let router = new UIRouterReact();
 router.plugin(servicesPlugin);
 router.plugin(pushStateLocationPlugin);
 
 let states = [
-/* Sample code to define a uirouter state.
 	{
-		name: 'sample',
+		name: 'home',
 		url: '/',
-		component: Sample,
+		component: Home,
 		onEnter: (trans, state)=>{
 		},
 	},
-*/
 ];
 
 router.urlRouter.otherwise("/");
