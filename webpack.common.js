@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		app: './app/app.module.js',
+		app: './app/app.js',
 	},
 	output: {
 		filename: '[name].js',
@@ -20,8 +20,8 @@ module.exports = {
 				test: /\.js$/,
 				exclude: /(node_modules|bower_components)/,
 				loader: 'babel-loader',
-				query: {
-					presets: ['es2015', 'react']
+				options: {
+					presets: ['@babel/preset-env', '@babel/preset-react'],
 				}
 			},
 			{

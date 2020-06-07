@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
-export default (props) => (
+export const ProfileCard = ({
+  name, username, url, description,
+}) => (
   <div className="profile-card card">
     <div className="card-content">
       <div className="media">
@@ -11,17 +14,22 @@ export default (props) => (
           </figure>
         </div>
         <div className="media-content">
-          <p className="title is-4">{props.name}</p>
-          <p className="subtitle is-6">{props.username}</p>
+          <p className="title is-4">{name}</p>
+          <p className="subtitle is-6">{username}</p>
         </div>
       </div>
-
       <div className="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Phasellus nec iaculis mauris.
+        {description}
         <br/>
-        <a href={props.url} target='_blank'>{props.url}</a>
+        <a href={url} rel="noreferrer" target='_blank'>{url}</a>
       </div>
     </div>
   </div>
-)
+);
+
+ProfileCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  description: PropTypes.string,
+};
