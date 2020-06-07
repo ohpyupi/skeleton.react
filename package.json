@@ -1,7 +1,7 @@
 {
   "name": "skeleton.react",
   "version": "1.1.0",
-  "description": "This skeleton is designed to provide devs to set up a React app with GraphQL easily and quickly.",
+  "description": "This skeleton is designed to provide devs with a template to set up a React app with GraphQL easily and quickly.",
   "main": "server/index.js",
   "engines": {
     "node": "~10.16.3",
