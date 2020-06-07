@@ -8,7 +8,7 @@ app // React app
 ├── apollo-client.js
 ├── /containers
 │   └── /sample // a sample container
-│	    └── index.js
+│       └── index.js
 ├── /components
 |   └── /sample // a sample component
 |       └── index.js
@@ -16,7 +16,7 @@ server // Express and GraphQL API
 ├── app.js
 ├── graphql.js
 ├── /schema // To store GraphQL schema
-│	└── schema.graphql
+│   └── schema.graphql
 └── /resolvers // To store Graphql Resolvers
 ```
 
