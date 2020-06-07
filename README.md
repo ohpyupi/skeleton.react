@@ -33,3 +33,6 @@ For develolopment purpose, a minimal express development server comes with the p
 # npm run nodemon // Run a development server for the project.
 # npm run dev // Run both "npm run watch" and "npm run nodemon" together.
 ```
+
+## License
+MIT
