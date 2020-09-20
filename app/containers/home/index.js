@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { ProfileCard } from '../../components/profile-card';
 import { GET_APP_INFO } from './gql';
 import { Spinner } from '../../components/spinner';
