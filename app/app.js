@@ -12,7 +12,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloProvider } from '@apollo/client';
 
 import { Home } from './containers/home';
 import { SampleContainer } from './containers/sample';
