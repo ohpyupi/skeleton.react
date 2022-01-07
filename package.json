@@ -11,12 +11,12 @@
     "lint:app": "eslint app",
     "lint:server": "eslint server",
     "lint": "npm run lint:app && npm run lint:server",
-    "start": "node ./server/index.js",
     "postinstall": "npm run build",
     "nodemon": "nodemon ./server/index.js",
-    "watch": "webpack --config webpack.dev.js --watch --progress",
     "build": "npm run lint && webpack --config webpack.prod.js --progress",
-    "dev": "concurrently \"npm run nodemon\" \"npm run watch\""
+    "build:watch": "webpack --config webpack.dev.js --watch --progress",
+    "start": "node ./server/index.js",
+    "start:dev": "concurrently \"npm run nodemon\" \"npm run build:watch\""
   },
   "repository": {
     "type": "git",
