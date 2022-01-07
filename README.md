@@ -29,9 +29,9 @@ For develolopment purpose, a minimal express development server comes with the p
 # npm start // Run a server - to be used in production.
 # npm run lint // Run ESLint on client/server Javascript files
 # npm run build // Produce production-ready(minified) assets.
-# npm run watch // Continuouly produce assets for development purpose whenever changes made.
+# npm run build:watch // Continuouly produce assets for development purpose whenever changes made.
 # npm run nodemon // Run a development server for the project.
-# npm run dev // Run both "npm run watch" and "npm run nodemon" together.
+# npm run start:dev // Run both "npm run build:watch" and "npm run nodemon" together.
 ```
 
 ## License
