@@ -9,6 +9,7 @@
         "ecmaVersion": 11
     },
     "rules": {
-        "eol-last": 0
+        "eol-last": 0,
+        "indent": ["error", 2]
     }
 }
