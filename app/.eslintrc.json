@@ -19,6 +19,12 @@
     ],
     "rules": {
         "import/prefer-default-export": 0,
-        "eol-last": 0
+        "eol-last": 0,
+        "indent": ["error", 2]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
